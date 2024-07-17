@@ -22,7 +22,6 @@ func (p *payload) constructPayload() {
 
 func (p *payload) buildPayload() {
 	p.Data["APPVERSION"] = strings.TrimPrefix(p.UserAgent, "Mozilla/")
-	p.Data["APPVERSION"] = strings.TrimPrefix(p.UserAgent, "Mozilla/")
 	p.Data["USERAGENT"] = p.UserAgent
 	p.Data["06/26/2023 06:47:34"] = time.Now().Format("01/02/2006 15:04:05")
 }
